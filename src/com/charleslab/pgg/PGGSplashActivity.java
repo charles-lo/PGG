@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.widget.ImageView;
 
 public class PGGSplashActivity extends Activity {
+	final int splashTime = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,7 @@ public class PGGSplashActivity extends Activity {
             		  PGGLoginActivity.class);
               startActivity(i);
             }
-        }, 5000);
+        }, splashTime);
     }
 
 
