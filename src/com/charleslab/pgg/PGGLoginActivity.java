@@ -2,9 +2,11 @@ package com.charleslab.pgg;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -17,6 +19,7 @@ public class PGGLoginActivity extends Activity {
 	   public void onCreate(Bundle savedInstanceState) {
 	      super.onCreate(savedInstanceState);
 	      setContentView(R.layout.login);
+	      // make actionbar empty
 	      ActionBar actionBar = getActionBar(); 
 	      actionBar.setDisplayShowTitleEnabled(false); 
 	      actionBar.setDisplayShowHomeEnabled(false);
@@ -35,5 +38,9 @@ public class PGGLoginActivity extends Activity {
 	      params = (LayoutParams) btnPGG.getLayoutParams();
 	      params.width = params.height = size;
 	      btnPGG.setLayoutParams(params);
+	   }
+	   
+	   public void launchPGGLogin(View view){
+		   startActivity(new Intent(PGGLoginActivity.this, LoginPGGActivity.class));
 	   }
 }

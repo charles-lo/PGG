@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!--
@@ -16,11 +17,17 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <item name="android:displayOptions"></item>
     </style>
-    
+
     <!-- No actionbar theme. -->
     <style name="NoActionBar" parent="AppBaseTheme">
         <item name="android:windowActionBar">false</item>
-		<item name="android:windowTitleSize">0dp</item>	
+        <item name="android:windowTitleSize">0dp</item>
     </style>
-    
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
 </resources>

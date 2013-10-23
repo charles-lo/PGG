@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="title_activity_login_pgg">login PGG</string>
+
+    <!-- Strings related to login -->
+    <string name="title_1">已註冊會原</string>
+    <string name="title_2">新會員</string>
+    <string name="prompt_phone">電話</string>
+    <string name="prompt_password">密碼</string>
+    <string name="action_sign_in_register">登入</string>
+    <string name="action_register">註冊</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="error_invalid_phone">無效的電話號碼</string>
+    <string name="error_invalid_password">密碼太短</string>
+    <string name="error_incorrect_password">密碼不正確</string>
+    <string name="error_field_required">此欄必需</string>
+
+</resources>

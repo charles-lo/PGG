@@ -30,6 +30,7 @@
 	    android:scaleType="centerInside"
 	    android:background="@drawable/btn_green_selector"
 	    android:src="@drawable/ico_logo_pgg"
+	    android:onClick="launchPGGLogin"
     />
 
 </RelativeLayout>
