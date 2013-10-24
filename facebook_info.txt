@@ -1,0 +1,6 @@
+﻿keytool -exportcert -alias androiddebugkey -keystore %HOMEPATH%\.android\debug.keystore | openssl sha1 -binary | openssl base64
+
+3/i16DHVbBw5Hq85YIDI8k0e5lM=
+
+
+App ID:	650911751619512

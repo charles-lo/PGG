@@ -19,6 +19,7 @@
 	    android:background="@drawable/btn_blue_selector"
 	    android:src="@drawable/ico_logo_facebook"
 	    android:text="Facebook"
+	    android:onClick="launchFacebookLogin"
     />
     
     <ImageButton

@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -15,6 +16,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.charleslab.pgg.PGGSplashActivity"
+            android:icon="@drawable/ico_logo_pgg"
             android:label="@string/app_name"
             android:theme="@style/NoActionBar" >
             <intent-filter>
@@ -32,13 +34,17 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
-        <activity android:name="com.charleslab.pgg.LoginPGGActivity"
+        <activity
+            android:name="com.charleslab.pgg.LoginPGGActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="adjustResize|stateVisible"
-            >
+            android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
+        <activity
+            android:name="com.charleslab.pgg.LoginFacebookActivity"
+            android:label="@string/title_activity_login_facebook" >
+        </activity>
+        <activity android:name="com.facebook.LoginActivity"/>        
+        <meta-data android:value="@string/app_id" android:name="com.facebook.sdk.ApplicationId"/>
     </application>
 
 </manifest>
-

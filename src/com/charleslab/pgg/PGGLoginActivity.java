@@ -1,10 +1,13 @@
 package com.charleslab.pgg;
 
+import com.facebook.Session;
+
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
@@ -24,6 +27,11 @@ public class PGGLoginActivity extends Activity {
 	      actionBar.setDisplayShowTitleEnabled(false); 
 	      actionBar.setDisplayShowHomeEnabled(false);
 	      //
+	      if(Session.getActiveSession()!=null && Session.getActiveSession().isOpened())
+	      {
+	    	  Log.d("", "");
+	      };
+	      //
 	      DisplayMetrics metrics = new DisplayMetrics();  
 	      final WindowManager w = (WindowManager) getSystemService(WINDOW_SERVICE);
 	      final Display d = w.getDefaultDisplay();
@@ -42,5 +50,9 @@ public class PGGLoginActivity extends Activity {
 	   
 	   public void launchPGGLogin(View view){
 		   startActivity(new Intent(PGGLoginActivity.this, LoginPGGActivity.class));
+	   }
+	   
+	   public void launchFacebookLogin(View view){
+		   startActivity(new Intent(PGGLoginActivity.this, LoginFacebookActivity.class));
 	   }
 }

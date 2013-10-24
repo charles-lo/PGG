@@ -3,5 +3,7 @@
 
     <string name="app_name">PGG</string>
     <string name="action_settings">Settings</string>
+    <string name="app_id">650911751619512</string>
+    <string name="title_activity_login_facebook">LoginFacebook</string>
 
 </resources>
